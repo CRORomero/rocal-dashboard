@@ -75,10 +75,10 @@ function DestajoForm({ destajo, onClose, onDone }) {
             {destajo ? "Editar Destajo" : "Agregar Destajo"}
           </h2>
 
-          <Field label="Trabajo" name="name" value={formData.name} onChange={handleChange} />
-          <Field label="Trabajador" name="worker" value={formData.worker} onChange={handleChange} />
-          <Field label="Costo" name="cost" type="number" value={formData.cost} onChange={handleChange} />
-          <Field label="Estado" name="status" value={formData.status} onChange={handleChange} />
+          <Field label="CONCEPTO" name="name" value={formData.name} onChange={handleChange} />
+          <Field label="UNIDAD" name="worker" value={formData.worker} onChange={handleChange} />
+          <Field label="PU MANO DE OBRA" name="cost" type="number" value={formData.cost} onChange={handleChange} />
+          <Field label="CANTIDAD" name="status" value={formData.status} onChange={handleChange} />
 
           <div>
             <Label className="text-white">Notas</Label>
@@ -108,3 +108,4 @@ const Field = ({ label, ...props }) => (
 );
 
 export default DestajoForm;
+
